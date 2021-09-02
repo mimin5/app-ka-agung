@@ -6,6 +6,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 Route::prefix('auth')->group(function () {
     Route::get('/login', 'auth\LoginController@index')->name('login');
     Route::get('/register', 'auth\RegisterController@index')->name('register');
+    Route::post('/dashauth','auth\LoginController@login')->name('authlogin');
 });
 
 Route::middleware(['auth'])->group(function () {
