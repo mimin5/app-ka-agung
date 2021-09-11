@@ -24,4 +24,9 @@ class LoginController extends Controller
             return redirect(route('login'))->with('status','username dan password tidak ditemukan');
         }
     }
+    public function logout()
+    {
+        Auth::logout();
+        return redirect(route('login'))->with('status','anda berhsil logout'); 
+    }
 }

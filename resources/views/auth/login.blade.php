@@ -33,7 +33,7 @@
                             <img src="{{ asset('assets/images/logo-dark.png') }}" alt="" class="img-fluid mb-4">
                             <h4 class="mb-3 f-w-400">Login</h4>
                             @if (session('status'))
-                            <div class="alert alert-danger">
+                            <div class="alert alert-success">
                                 {{ session('status')}}
                             </div>
                             @endif
